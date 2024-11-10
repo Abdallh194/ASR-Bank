@@ -1,2 +1,81 @@
 .AboutUs {
+  padding: 60px 5px;
+  .img-card {
+    position: relative;
+
+    .img-fluid {
+      position: relative;
+      z-index: 1;
+      display: block;
+      margin: auto;
+    }
+    .pink__gradient {
+      background: linear-gradient(180deg, #bca5ff00, #214d76);
+      filter: blur(123px);
+    }
+    .white__gradient {
+      background: #fff9;
+      filter: blur(750px);
+    }
+    .blue__gradient {
+      background: linear-gradient(180deg, #bca5ff00, #214d76);
+      filter: blur(123px);
+    }
+  }
+  .main-head {
+    font-size: 52px;
+    font-weight: 700;
+    span {
+      color: $aqua-color;
+    }
+  }
+  .desc {
+    font-size: 19px;
+    color: rgb(132, 132, 132);
+  }
+  .icon {
+    font-size: 35px;
+    background-color: #ff61291a;
+    padding: 17px;
+    border-radius: 50%;
+    margin-right: 17px;
+    color: $aqua-color;
+  }
+  .feature-head {
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .feature-info {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 5px;
+    color: #ffffff87;
+  }
+  .active {
+    background-image: linear-gradient(
+      144.39deg,
+      #ffffff -278.56%,
+      #6d6d6d -78.47%,
+      #11101d 91.61%
+    );
+    box-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
+    padding: 20px;
+    border-radius: 20px;
+    margin-left: -20px;
+  }
+  @media (max-width: 1400px) {
+    .img-card {
+      .img-fluid {
+        height: 100%;
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    .main-head {
+      font-size: 40px;
+    }
+    .img-card {
+      margin-top: 40px;
+    }
+  }
 }

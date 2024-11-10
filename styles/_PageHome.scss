@@ -1,6 +1,6 @@
 .PageHome {
   background: url("/home.jpg");
-  height: 910px;
+  height: 100vh;
   background-size: cover;
   background-position: center;
   position: relative;
@@ -15,6 +15,20 @@
     font-weight: 700;
     line-height: 1.3;
     color: $orange-color;
+    .circle {
+      position: relative;
+      &::before {
+        position: absolute;
+        content: "";
+        width: 130px;
+        height: 60px;
+        border-radius: 50%;
+        left: -15px;
+        top: 25px;
+        border: 1px solid #eee;
+        transform: rotate(-38deg);
+      }
+    }
   }
   .sub-head {
     font-size: 37px;
@@ -102,34 +116,39 @@
     }
   }
   @media (max-width: 992px) {
+    background-position-x: 71%;
+    height: 172vh;
     .info-card {
       text-align: center;
     }
     .animation-card {
       margin-top: 40px;
     }
-    .animation {
-      width: 90%;
-    }
   }
   @media (max-width: 767px) {
+    height: 100vh;
     .row {
       margin-top: 39px;
     }
     .main-head {
       font-size: 2.8rem;
     }
+
+    .animation-card {
+      margin-top: 5px;
+    }
+
     .sub-head {
       font-size: 19px;
     }
     .cards,
-    .flip-card {
-      width: 100%;
-      display: block !important;
-      text-align: left;
+    .info {
+      display: none !important;
     }
-    .card_02 {
-      margin-top: 12px;
+  }
+  @media (max-width: 585px) {
+    .animation {
+      width: 90%;
     }
   }
 }

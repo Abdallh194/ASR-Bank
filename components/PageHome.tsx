@@ -17,7 +17,9 @@ const PageHome = () => {
             <Col md={12} lg={6} className="info-card">
               <div className="main-head">
                 <span className="sp_01 d-block">The Best Bank</span>
-                <span className="sp_02 d-block"> To Manage Your</span>
+                <span className="sp_02 d-block">
+                  <span className="circle"> To</span> Manage Your
+                </span>
                 <span className="sp_03 d-block">Finance</span>
               </div>
               <div className="sub-head mt-2">
