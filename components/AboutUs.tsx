@@ -30,7 +30,7 @@ const AboutUs = () => {
     },
   ];
   return (
-    <div className="AboutUs">
+    <div className="AboutUs" id="AboutUs">
       <Container>
         <Row>
           <Col md={12} lg={6}>

@@ -7,8 +7,8 @@ const TopBar = () => {
     <div className="TopBar  d-flex justify-between align-items-center">
       <div className="menu d-flex  align-items-center w-50">
         <Nav.Link href="#">Home</Nav.Link>
-        <Nav.Link href="#">About Us</Nav.Link>
-        <Nav.Link href="#">Services</Nav.Link>
+        <Nav.Link href="#AboutUs">About Us</Nav.Link>
+        <Nav.Link href="#Service">Services</Nav.Link>
         <Nav.Link href="#">Contact Us</Nav.Link>
       </div>
 

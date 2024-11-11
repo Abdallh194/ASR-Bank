@@ -259,3 +259,102 @@ export const navbarItems4: DropdownItem[] = [
   },
   { href: "#customer-support", label: "Customer Support", icon: <FaHeadset /> },
 ];
+export const sections = [
+  {
+    head: "Banking",
+    links: [
+      "Personal Accounts",
+      "Business Accounts",
+      "Loans",
+      "Credit Cards",
+      "Investments",
+      "Business Accounts",
+      "Loans",
+      "Business Accounts",
+      "Loans",
+    ],
+  },
+  {
+    head: "Insurance",
+    links: [
+      "Health Insurance",
+      "Life Insurance",
+      "Car Insurance",
+      "Home Insurance",
+      "Travel Insurance",
+      "Home Insurance",
+      "Travel Insurance",
+    ],
+  },
+  {
+    head: "Investing",
+    links: [
+      "Stock Market",
+      "Bonds",
+      "Mutual Funds",
+      "Retirement Plans",
+      "Cryptocurrency",
+    ],
+  },
+  {
+    head: "Real Estate",
+    links: [
+      "Buying a Home",
+      "Selling a Home",
+      "Renting",
+      "Mortgage Rates",
+      "Commercial Real Estate",
+    ],
+  },
+  {
+    head: "Travel",
+    links: [
+      "Flight Bookings",
+      "Hotel Reservations",
+      "Travel Insurance",
+      "Holiday Packages",
+      "Travel Guides",
+      "Travel Insurance",
+      "Holiday Packages",
+      "Travel Guides",
+    ],
+  },
+  {
+    head: "Technology",
+    links: ["Gadgets", "Software", "AI & Robotics", "Tech News", "Startups"],
+  },
+];
+export const teamData = [
+  {
+    src: "/team-1.jpg",
+    alt: "Team member 1",
+    name: "John Doe",
+    position: "Software Engineer",
+    description:
+      "consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  },
+  {
+    src: "/team-2.jpg",
+    alt: "Team member 2",
+    name: "Jane Smith",
+    position: "Project Manager",
+    description:
+      "consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  },
+  {
+    src: "/team-3.jpg",
+    alt: "Team member 3",
+    name: "Michael Brown",
+    position: "UI/UX Designer",
+    description:
+      "consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  },
+  {
+    src: "/team-4.jpg",
+    alt: "Team member 4",
+    name: "Emily Johnson",
+    position: "Data Scientist",
+    description:
+      "consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  },
+];

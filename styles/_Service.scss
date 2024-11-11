@@ -1,0 +1,118 @@
+.Service {
+  margin-top: 90px;
+  .Service-Card {
+    padding: 40px 20px;
+    width: calc(100% / 3 - 40px);
+    margin: 20px auto;
+    border-radius: 8px;
+    background-image: url("/details.png");
+    background-position: center;
+    background-size: cover;
+    background-color: #85858512;
+    text-align: center;
+    overflow: hidden;
+    .icon {
+      color: black;
+      padding: 21px;
+      font-size: 37px;
+      border-radius: 50%;
+      margin: auto;
+      width: fit-content;
+      overflow: hidden;
+      z-index: 1;
+      box-shadow: 0px 0px 10px 10px #03f6ff4a;
+      position: relative;
+      transition: all 0.3s ease-in-out;
+      &::before {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        content: "";
+        box-shadow: 0px 0px 10px 10px #03f6ff4a;
+        background-color: $aqua-color;
+        z-index: -1;
+        transition: all 0.3s ease-in-out;
+      }
+    }
+    &:hover {
+      .icon {
+        background-color: black;
+        color: $aqua-color;
+        &::before {
+          left: -115%;
+        }
+      }
+      .learn {
+        transform: scale(1.2);
+      }
+    }
+    .card-head {
+      font-size: 21px;
+      font-weight: 600;
+    }
+    .learn {
+      text-decoration: underline;
+      color: $aqua-color;
+      font-size: 17px;
+      font-weight: 600;
+      user-select: none;
+      cursor: pointer;
+      transition: 0.4s;
+    }
+  }
+  .Active-card {
+    background-image: linear-gradient(
+      144.39deg,
+      #ffffff -278.56%,
+      #6d6d6d -78.47%,
+      #11101d 91.61%
+    );
+    box-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
+  }
+
+  .row {
+    margin-top: 50px;
+  }
+  .info {
+    width: 60%;
+    margin: auto;
+    margin-top: 26px;
+    text-align: center;
+    font-size: 18px;
+    color: #a0a0a0;
+  }
+  .head {
+    font-size: 2.3rem;
+    font-weight: 600;
+    width: fit-content;
+    margin: auto;
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      left: 50%;
+      transform: translateX(-50%);
+      width: 54%;
+      height: 3px;
+      bottom: -9px;
+      background-color: $aqua-color;
+    }
+  }
+  @media (max-width: 992px) {
+    .info {
+      width: 100%;
+    }
+    .row {
+      margin-top: 10px;
+    }
+    .Service-Card {
+      margin: 10px auto;
+      width: 96%;
+    }
+  }
+  @media (max-width: 767px) {
+    margin-top: 20px;
+  }
+}

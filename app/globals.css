@@ -455,6 +455,11 @@ html {
   .PageHome .animation-card {
     margin-top: 40px;
   }
+  .PageHome .main-head .circle::before {
+    width: 71px;
+    height: 26px;
+    top: 18px;
+  }
 }
 @media (max-width: 767px) {
   .PageHome {
@@ -606,7 +611,7 @@ html {
 }
 .AboutUs .icon {
   font-size: 35px;
-  background-color: rgba(255, 97, 41, 0.1019607843);
+  background-color: rgba(9, 151, 124, 0.1019607843);
   padding: 17px;
   border-radius: 50%;
   margin-right: 17px;
@@ -640,5 +645,396 @@ html {
   }
   .AboutUs .img-card {
     margin-top: 40px;
+  }
+}
+
+.Service {
+  margin-top: 90px;
+}
+.Service .Service-Card {
+  padding: 40px 20px;
+  width: calc(33.3333333333% - 40px);
+  margin: 20px auto;
+  border-radius: 8px;
+  background-image: url("/details.png");
+  background-position: center;
+  background-size: cover;
+  background-color: rgba(133, 133, 133, 0.0705882353);
+  text-align: center;
+  overflow: hidden;
+}
+.Service .Service-Card .icon {
+  color: black;
+  padding: 21px;
+  font-size: 37px;
+  border-radius: 50%;
+  margin: auto;
+  width: -moz-fit-content;
+  width: fit-content;
+  overflow: hidden;
+  z-index: 1;
+  box-shadow: 0px 0px 10px 10px rgba(3, 246, 255, 0.2901960784);
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+.Service .Service-Card .icon::before {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+  box-shadow: 0px 0px 10px 10px rgba(3, 246, 255, 0.2901960784);
+  background-color: #03f6ff;
+  z-index: -1;
+  transition: all 0.3s ease-in-out;
+}
+.Service .Service-Card:hover .icon {
+  background-color: black;
+  color: #03f6ff;
+}
+.Service .Service-Card:hover .icon::before {
+  left: -115%;
+}
+.Service .Service-Card:hover .learn {
+  transform: scale(1.2);
+}
+.Service .Service-Card .card-head {
+  font-size: 21px;
+  font-weight: 600;
+}
+.Service .Service-Card .learn {
+  text-decoration: underline;
+  color: #03f6ff;
+  font-size: 17px;
+  font-weight: 600;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.Service .Active-card {
+  background-image: linear-gradient(144.39deg, #ffffff -278.56%, #6d6d6d -78.47%, #11101d 91.61%);
+  box-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
+}
+.Service .row {
+  margin-top: 50px;
+}
+.Service .info {
+  width: 60%;
+  margin: auto;
+  margin-top: 26px;
+  text-align: center;
+  font-size: 18px;
+  color: #a0a0a0;
+}
+.Service .head {
+  font-size: 2.3rem;
+  font-weight: 600;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  position: relative;
+}
+.Service .head::before {
+  position: absolute;
+  content: "";
+  left: 50%;
+  transform: translateX(-50%);
+  width: 54%;
+  height: 3px;
+  bottom: -9px;
+  background-color: #03f6ff;
+}
+@media (max-width: 992px) {
+  .Service .info {
+    width: 100%;
+  }
+  .Service .row {
+    margin-top: 10px;
+  }
+  .Service .Service-Card {
+    margin: 10px auto;
+    width: 96%;
+  }
+}
+@media (max-width: 767px) {
+  .Service {
+    margin-top: 20px;
+  }
+}
+
+.Customer {
+  margin-top: 130px;
+}
+.Customer .head {
+  font-size: 2.1rem;
+  text-align: center;
+  font-weight: 600;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  position: relative;
+}
+.Customer .head::before {
+  position: absolute;
+  content: "";
+  left: 50%;
+  transform: translateX(-50%);
+  width: 54%;
+  height: 2px;
+  bottom: -9px;
+  background-color: #03f6ff;
+}
+.Customer .container {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.Customer .card {
+  position: relative;
+  margin: 20px 0;
+  width: 300px;
+  height: 400px;
+  background: #fff;
+  transform-style: preserve-3d;
+  transform: perspective(2000px);
+  box-shadow: inset 300px 0 50px rgba(0, 0, 0, 0.5), 0 20px 20px rgba(0, 0, 0, 0.5);
+  transition: 1s;
+}
+.Customer .card:hover {
+  z-index: 10000;
+  transform: perspective(2000px) rotate(-10deg);
+  box-shadow: inset 20px 0 50px rgba(0, 0, 0, 0.5), 0 10px 100px rgba(0, 0, 0, 0.5);
+}
+.Customer .card .Box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  position: relative;
+  transform-origin: left;
+  z-index: 1;
+  transition: 1s cubic-bezier(0.15, 1.7, 0.84, 0.58);
+  background: #111;
+}
+.Customer .card .Box img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.Customer .card:hover .Box {
+  transform: rotateY(-135deg);
+}
+.Customer .card .details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  z-index: -1;
+}
+.Customer .customer-info {
+  background-color: rgba(3, 246, 255, 0.5294117647);
+  color: black;
+  padding: 20px;
+}
+.Customer .customer-info .img-fluid {
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.Customer .customer-msg {
+  padding: 20px;
+}
+.Customer .customer-msg .rate {
+  color: gold;
+  color: #edc800;
+  font-size: 19px;
+}
+.Customer .customer-msg .rate .star {
+  margin-right: 5px;
+}
+.Customer .customer-msg .read {
+  text-decoration: underline;
+  font-size: 17px;
+  font-weight: 600;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: pointer;
+}
+@media (max-width: 767px) {
+  .Customer {
+    margin-top: 70px;
+  }
+  .Customer .head {
+    font-size: 2rem;
+    line-height: 1.3;
+  }
+}
+
+.NewWay {
+  margin-top: 120px;
+}
+.NewWay .bg-side {
+  background-color: #03f6ff;
+  color: black;
+  overflow: hidden;
+  border-top-right-radius: 162px;
+  border-bottom-right-radius: 162px;
+  padding: 30px 0;
+}
+.NewWay .bg-side .img-fluid {
+  position: relative;
+  right: -20%;
+}
+.NewWay .info-card {
+  padding-left: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.NewWay .info-card .head {
+  background-color: rgba(3, 246, 255, 0.39);
+  border-radius: 10px;
+  font-size: 15px;
+  padding: 2px 10px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.NewWay .info-card .info {
+  font-size: 36px;
+  margin-top: 15px;
+  line-height: 1.3;
+  font-weight: 600;
+  color: #03f6ff;
+}
+.NewWay .info-card .info span {
+  display: block;
+}
+.NewWay .info-card .desc {
+  width: 50%;
+  font-size: 17px;
+  font-weight: 500;
+  color: #adadad;
+}
+@media (max-width: 1200px) {
+  .NewWay .info-card .desc {
+    width: 100%;
+  }
+}
+@media (max-width: 992px) {
+  .NewWay {
+    margin-top: 60px;
+  }
+  .NewWay .bg-side {
+    border-radius: 0;
+    margin-top: 30px;
+  }
+  .NewWay .bg-side .img-fluid {
+    right: 0;
+  }
+  .NewWay .row {
+    flex-direction: column-reverse;
+  }
+  .NewWay .info-card {
+    padding-left: 10px;
+  }
+  .NewWay .info-card .info {
+    font-size: 30px;
+  }
+  .NewWay .info-card .desc {
+    font-size: 15px;
+  }
+}
+
+footer {
+  padding: 60px 5px;
+  background-color: black;
+}
+footer .head {
+  font-size: 23px;
+  font-weight: 600;
+}
+footer .link {
+  color: rgb(187, 187, 187);
+}
+footer .logo {
+  font-family: "Pacifico";
+  font-size: 1.55rem;
+  color: white;
+  text-decoration: none;
+  margin-top: 50px;
+}
+footer .visa {
+  margin-top: 20px;
+}
+footer .visa .icon {
+  font-size: 42px;
+  margin-right: 30px;
+  color: antiquewhite;
+}
+footer .visa .more {
+  font-size: 18px;
+  font-weight: 600;
+}
+footer .social {
+  justify-content: flex-end;
+}
+footer .social .icon {
+  background-color: #03f6ff;
+  color: black;
+  padding: 4px;
+  margin-left: 20px;
+  font-size: 35px;
+  border-radius: 10px;
+}
+footer .policy {
+  text-align: end;
+  margin-top: 20px;
+}
+footer .policy span {
+  margin-left: 20px;
+}
+footer .copy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .copy .dev a {
+  text-decoration: none;
+}
+@media (max-width: 992px) {
+  footer {
+    padding: 60px 5px 20px 5px;
+  }
+  footer .copy {
+    display: block;
+    text-align: center;
+  }
+  footer .copy .dev {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 767px) {
+  footer .visa .icon {
+    font-size: 40px;
+    margin-right: 12px;
+  }
+  footer .foot-card {
+    margin-top: 20px;
+  }
+  footer .social {
+    justify-content: space-between;
+    margin-top: 25px;
+  }
+  footer .policy {
+    text-align: center;
   }
 }/*# sourceMappingURL=globals.css.map */

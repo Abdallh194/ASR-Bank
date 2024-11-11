@@ -124,6 +124,13 @@
     .animation-card {
       margin-top: 40px;
     }
+    .main-head .circle {
+      &::before {
+        width: 71px;
+        height: 26px;
+        top: 18px;
+      }
+    }
   }
   @media (max-width: 767px) {
     height: 100vh;
